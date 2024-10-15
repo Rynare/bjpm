@@ -1,0 +1,220 @@
+:root {
+    --main-color: #438D3D;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-offcanvas li>a.active,
+nav li>a.active {
+    color: var(--main-color);
+}
+
+.nav-offcanvas {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 9999;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease-in 0ms, visibility 0ms 250ms;
+}
+
+.nav-offcanvas.active {
+    transition: opacity 250ms ease-in 100ms, visibility 0ms 100ms;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+}
+
+section[id] {
+    scroll-margin-top: 64px;
+}
+
+swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-caption {
+    opacity: 0;
+    transition: 250ms all ease-in-out;
+    transition-delay: 100ms;
+}
+
+#home:hover .hero-caption {
+    opacity: 1;
+}
+
+.service-card {
+    position: relative;
+    aspect-ratio: 1/1.4;
+    width: 20%;
+}
+
+.service-card div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: 250ms ease-in all;
+    transition-delay: 100ms;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(67, 141, 61, 0.6) 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.service-card:hover div:nth-child(2) {
+    opacity: 1;
+}
+
+#project h1 {
+    background:
+        linear-gradient(90deg,
+            #438D3D 0%,
+            rgba(161, 198, 158, 0.7) 50%,
+            rgba(208, 227, 207, 0.5) 75%,
+            rgba(255, 255, 255, 0) 100%),
+        url('../img/project/Header.jpeg');
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: normal;
+}
+
+.project-card {
+    aspect-ratio: 1/1;
+    width: 30%;
+    aspect-ratio: 1/1.15;
+    background-color: #438D3D;
+}
+
+.article-card {
+    aspect-ratio: 1/1;
+    width: 20%;
+    position: relative;
+    --article-card-padding: 8px;
+}
+
+.article-card>div {
+    position: absolute;
+    bottom: 0;
+    max-height: 35.89%;
+    background-color: #fff;
+    color: var(--main-color);
+    left: 0;
+    right: 0;
+    padding: var(--article-card-padding);
+    padding-bottom: 15px;
+}
+
+.article-card>div>button {
+    position: absolute;
+    right: var(--article-card-padding);
+    bottom: var(--article-card-padding);
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: var(--main-color);
+    font-size: 13px;
+    padding: 0 1rem;
+}
+
+.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #fa183d; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+}
+
+.video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #583759;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: var(--main-color);
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+.video-play-button:hover:after {
+    opacity: .80;
+}
+
+/* .video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+} */
+
+.video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.contact-container>div>h3 {
+    font-weight: 700;
+}
