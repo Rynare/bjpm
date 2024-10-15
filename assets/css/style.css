@@ -108,7 +108,7 @@ swiper-slide img {
     aspect-ratio: 1/1;
     width: 20%;
     position: relative;
-    --article-card-padding: 8px;
+    --article-card-padding: 12px;
 }
 
 .article-card>div {
@@ -121,6 +121,10 @@ swiper-slide img {
     right: 0;
     padding: var(--article-card-padding);
     padding-bottom: 15px;
+}
+
+.article-card>div p {
+    width: 70%;
 }
 
 .article-card>div>button {
