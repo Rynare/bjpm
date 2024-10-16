@@ -91,6 +91,10 @@ swiper-slide img {
     object-fit: cover;
 }
 
+.progress-bar .progress {
+    transition: width 250ms ease-in-out;
+}
+
 .hero-caption {
     opacity: 0;
     transition: 250ms all ease-in-out;
