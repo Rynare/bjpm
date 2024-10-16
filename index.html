@@ -20,12 +20,12 @@
 <body class="bg-white">
     <div id="root">
         <header class="sticky top-0 z-50 p-1 px-3 bg-body">
-            <nav class="flex items-center font-poppin">
+            <nav class="flex items-center justify-between font-poppin">
                 <div class="logo">
                     <img src="./assets/img/logo/logo-bjpm.png" alt="Logo BJPM" class="w-[70px] aspect-square">
                 </div>
                 <ul
-                    class="flex items-center grow justify-center gap-3 text-grey1 flex-wrap max-h-[24px] overflow-hidden">
+                    class="flex items-center grow justify-center gap-3 text-grey1 flex-wrap max-h-[24px] overflow-hidden max-w-[70%]">
                     <li>
                         <a href="#home">Home</a>
                     </li>
@@ -52,41 +52,48 @@
                     <i class="bi bi-list text-[32px]"></i>
                 </button>
             </nav>
-            <div class="fixed top-0 left-0 right-0 pt-6 nav-offcanvas bg-body">
-                <button type="button" class="absolute top-0 right-0 mt-4 close-btn me-4">
-                    <i class="bi bi-x text-[32px]"></i>
-                </button>
-                <ul class="flex flex-col items-center justify-center w-full h-full gap-2">
-                    <li class="">
-                        <div class="mobile-logo"></div>
-                        <div class="mobile-tagline"></div>
-                    </li>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">Tentang</a>
-                    </li>
-                    <li>
-                        <a href="#service">Layanan</a>
-                    </li>
-                    <li>
-                        <a href="#product">Produk</a>
-                    </li>
-                    <li>
-                        <a href="#project">Proyek</a>
-                    </li>
-                    <li>
-                        <a href="#article">Artikel</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Kontak</a>
-                    </li>
-                    <li>
-                        <p>Media Sosial</p>
-                        <div class="social-media-wrapper"></div>
-                    </li>
-                </ul>
+            <div class="nav-offcanvas bg-body">
+                <div class="py-6">
+                    <button type="button" class="fixed top-0 right-0 mt-2 close-btn me-8">
+                        <i class="bi bi-x text-[32px]"></i>
+                    </button>
+                    <ul class="flex flex-col items-center justify-center w-full h-full gap-2">
+                        <li class="flex flex-col items-center text-center text-main">
+                            <img src="./assets/img/logo/logo-bjpm.png" alt="" class="w-[70px] aspect-square mb-3">
+                            <p class="mobile-tagline">PT. BINA JAYA MANDIRI
+                                INDONESIA
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">Tentang</a>
+                        </li>
+                        <li>
+                            <a href="#service">Layanan</a>
+                        </li>
+                        <li>
+                            <a href="#product">Produk</a>
+                        </li>
+                        <li>
+                            <a href="#project">Proyek</a>
+                        </li>
+                        <li>
+                            <a href="#article">Artikel</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Kontak</a>
+                        </li>
+                        <li class="text-main">
+                            <p class="text-center">Media Sosial</p>
+                            <div class="flex gap-x-3 mt-1 social-media-wrapper text-[24px] justify-center">
+                                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <section id="home" class="relative h-screen">
@@ -126,7 +133,7 @@
                             </span>
                         </button>
                     </div>
-                    <div class="flex flex-col gap-4 caption-testimony">
+                    <div class="flex-col hidden gap-4 sm:flex caption-testimony">
                         <div class="p-5 text-black bg-white branch-amount">
                             <p class="text-[28px]">5</p>
                             <p>Cabang</p>

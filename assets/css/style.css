@@ -7,6 +7,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 .nav-offcanvas li>a.active,
@@ -15,18 +16,19 @@ nav li>a.active {
 }
 
 .nav-offcanvas {
-    overflow: hidden;
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
     background-color: #fff;
     z-index: 9999;
-    height: 100vh;
     opacity: 0;
     visibility: hidden;
     transition: opacity 250ms ease-in 0ms, visibility 0ms 250ms;
+    min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .nav-offcanvas.active {
@@ -34,6 +36,24 @@ nav li>a.active {
     opacity: 1;
     visibility: visible;
     z-index: 9999;
+}
+
+.nav-offcanvas ul li:first-child:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 200px;
+    background-color: var(--main-color);
+    margin: 1rem 0;
+}
+
+.nav-offcanvas ul li:last-child::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 200px;
+    background-color: var(--main-color);
+    margin: 1rem 0;
 }
 
 section[id] {
