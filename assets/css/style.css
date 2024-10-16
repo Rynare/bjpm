@@ -13,7 +13,31 @@ body {
 .nav-offcanvas li>a.active,
 nav li>a.active {
     color: var(--main-color);
+    font-weight: bold;
 }
+
+nav li>a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+nav li>a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    transition: width 0.3s ease-in-out;
+}
+
+nav li>a.active::after {
+    width: 100%;
+}
+
+
 
 .nav-offcanvas {
     position: fixed;
@@ -70,6 +94,10 @@ swiper-slide img {
     opacity: 0;
     transition: 250ms all ease-in-out;
     transition-delay: 100ms;
+}
+
+.caption-testimony {
+    width: 150px;
 }
 
 #home:hover .hero-caption {
