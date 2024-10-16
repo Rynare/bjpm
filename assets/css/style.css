@@ -223,7 +223,7 @@ swiper-slide img {
     display: block;
     width: 80px;
     height: 80px;
-    background: #583759;
+    background: rgba(161, 198, 158, 0.7);
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
