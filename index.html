@@ -143,8 +143,8 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="flex items-center p-4 px-10 my-10">
-            <div class="max-w-[700px] text-[13px] pe-4" data-aos="fade-right">
+        <section id="about" class="flex flex-col md:flex-row items-center p-4 px-10 my-10">
+            <div class="max-w-[700px] text-[13px] pe-4 md:order-1 order-2" data-aos="fade-right">
                 <h1 class="text-main text-[32px] font-bold mb-4">Kepuasan pelanggan adalah
                     tujuan kami</h1>
                 <p class="mb-2">
@@ -166,11 +166,12 @@
                 </p>
                 <button class="p-3 py-1 mt-3 text-white bg-main">Selengkapnya</button>
             </div>
-            <img src="./assets/img/About.png" alt="" class="max-w-[400px] w-[100%] p-4" data-aos="fade-left">
+            <img src="./assets/img/About.png" alt="" class="max-w-[400px] w-[100%] p-4 md:order-2 order-1"
+                data-aos="fade-left">
         </section>
-        <section id="service" class="flex flex-col bg-gray2">
-            <div class="flex justify-center gap-4 mb-4">
-                <div class="service-card" data-aos="zoom-in">
+        <section id="service" class="flex flex-col bg-gray2 mx-auto">
+            <div class="md:flex block justify-center gap-4 mb-4">
+                <div class="service-card mt-5 md:mt-0" data-aos="zoom-in">
                     <div class="h-full">
                         <img src="./assets/img/service/Sccafolding.jpg" alt="" class="object-cover w-full h-full">
                     </div>
@@ -193,7 +194,7 @@
                         <img src="./assets/img/service/SteelConst.jpeg" alt="" class="object-cover w-full h-full">
                     </div>
                     <div>
-                        <p class="text-[30px] mb-4 text-center leading-7">Steel Constructor</p>
+                        <p class="text-[30px] mb-4 text-center leading-7">Steel <br> Constructor</p>
                         <button class="bg-main text-[13px] px-3 p-1">Selengkapnya</button>
                     </div>
                 </div>
@@ -207,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            <button class="mx-auto bg-main text-white px-3 text-[13px] p-1">
+            <button class="mx-auto bg-main text-white px-3 text-[13px] p-1  md:mb-0 mb-5">
                 Selanjutnya
             </button>
         </section>
@@ -228,7 +229,7 @@
         </section> -->
         <section id="project" class="flex flex-col p-10">
             <h1 class="text-[32px] text-center text-white p-4 mb-4">Proyek Kami</h1>
-            <div class="flex justify-between mb-4 project-card-container">
+            <div class="md:flex block justify-between mb-4 project-card-container">
                 <div class="project-card" data-aos="zoom-in">
                     <img src="./assets/img/project/1.jpg" alt="" class="object-cover w-full h-full">
                 </div>
@@ -243,7 +244,7 @@
         </section>
         <section id="article" class="p-10 px-5 text-white bg-main">
             <h1 class="text-[32px] mb-4">Artikel</h1>
-            <div class="flex justify-between">
+            <div class="block md:flex justify-between">
                 <div class="article-card" data-aos="zoom-in">
                     <img src="./assets/img/Blank.jpg" alt="">
                     <div>
