@@ -23,7 +23,7 @@ nav li>a {
 }
 
 nav li>a::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 3px;
@@ -36,8 +36,6 @@ nav li>a::after {
 nav li>a.active::after {
     width: 100%;
 }
-
-
 
 .nav-offcanvas {
     position: fixed;
@@ -81,6 +79,25 @@ nav li>a.active::after {
     margin: 1rem 0;
 }
 
+@media(max-width:480px) {
+    .text-nav-capt {
+        display: none;
+    }
+
+    .img-abt {
+        padding: 0px;
+    }
+
+    .text-about {
+        text-align: justify;
+    }
+
+    .video-yt {
+        height: 200px;
+        width: 300px;
+    }
+}
+
 section[id] {
     scroll-margin-top: 64px;
 }
@@ -89,6 +106,10 @@ swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.progress-bar .progress {
+    transition: width 250ms ease-in-out;
 }
 
 .hero-caption {
@@ -105,10 +126,14 @@ swiper-slide img {
     opacity: 1;
 }
 
+.text-about {
+    margin-bottom: 20px;
+}
+
 .service-card {
     position: relative;
     aspect-ratio: 1/1.4;
-    width: 20%;
+    width: 40%;
 }
 
 @media (max-width: 768px) {
@@ -117,7 +142,7 @@ swiper-slide img {
     }
 
     .service-card {
-        width: 70%;
+        width: 100%;
         gap: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -159,7 +184,6 @@ swiper-slide img {
     background-repeat: no-repeat;
     background-size: cover;
     transition: background 0.5s ease-in-out;
-    /* Menambahkan transisi */
 }
 
 #project h1:hover {
@@ -173,7 +197,7 @@ swiper-slide img {
 
 .project-card {
     aspect-ratio: 1/1.15;
-    width: 30%;
+    width: 32%;
     background-color: #438d3d;
     position: relative;
     overflow: hidden;
@@ -187,14 +211,16 @@ swiper-slide img {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(104, 178, 99, 0.8), rgba(208, 227, 207, 0.7), rgba(255, 255, 255, 0));
+    background: linear-gradient(to right,
+            rgba(104, 178, 99, 0.8),
+            rgba(208, 227, 207, 0.7),
+            rgba(255, 255, 255, 0));
     transition: left 0.5s ease-in-out;
     z-index: 2;
 }
 
 .project-card:hover::before {
     left: 0;
-
 }
 
 .project-card img {
@@ -203,11 +229,9 @@ swiper-slide img {
     object-fit: cover;
     position: relative;
     z-index: 1;
-    /* Di bawah gradien, tetap terlihat */
 }
 
-
-@media(max-width:768px) {
+@media (max-width: 768px) {
     .project-card {
         width: 100%;
         gap: 20px;
@@ -249,7 +273,7 @@ swiper-slide img {
     background-color: var(--main-color);
     font-size: 13px;
     padding: 0 1rem;
-    max-height: 40px;
+    max-height: 50px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -263,17 +287,7 @@ swiper-slide img {
 
 .article-card>p>button:hover i {
     transform: translateX(5px);
-    /* Panah bergerak ke kanan */
 }
-
-
-@media(max-width:420px) {
-    .article-card>p>button {
-        margin-top: 56px;
-        max-height: 40px;
-    }
-}
-
 
 .video-play-button {
     position: absolute;
