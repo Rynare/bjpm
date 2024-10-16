@@ -158,15 +158,54 @@ swiper-slide img {
     background-position-y: 60%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: normal;
+    transition: background 0.5s ease-in-out;
+    /* Menambahkan transisi */
+}
+
+#project h1:hover {
+    background: linear-gradient(-90deg,
+            #438d3d 0%,
+            rgba(161, 198, 158, 0.7) 50%,
+            rgba(208, 227, 207, 0.5) 75%,
+            rgba(255, 255, 255, 0) 100%),
+        url("../img/project/Header.jpeg");
 }
 
 .project-card {
-    aspect-ratio: 1/1;
-    width: 30%;
     aspect-ratio: 1/1.15;
+    width: 30%;
     background-color: #438d3d;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(104, 178, 99, 0.8), rgba(208, 227, 207, 0.7), rgba(255, 255, 255, 0));
+    transition: left 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.project-card:hover::before {
+    left: 0;
+
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    /* Di bawah gradien, tetap terlihat */
+}
+
 
 @media(max-width:768px) {
     .project-card {
@@ -188,23 +227,21 @@ swiper-slide img {
 }
 
 .article-card>p {
-    max-height: 37.89%;
-    height: 37.89%;
+    max-height: 40%;
+    height: 40%;
     background-color: #fff;
     color: var(--main-color);
     padding: var(--article-card-padding);
     padding-bottom: 15px;
-    font-size: 15px;
     line-height: 1.4;
 }
 
 .article-card>p>span {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
     overflow: hidden;
-    margin-bottom: 6px;
 }
 
 .article-card>p>button {
@@ -213,7 +250,22 @@ swiper-slide img {
     font-size: 13px;
     padding: 0 1rem;
     max-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    transition: all 0.3s ease;
 }
+
+.article-card>p>button i {
+    transition: transform 0.3s ease;
+}
+
+.article-card>p>button:hover i {
+    transform: translateX(5px);
+    /* Panah bergerak ke kanan */
+}
+
 
 @media(max-width:420px) {
     .article-card>p>button {
