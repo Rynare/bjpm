@@ -21,6 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
         setActiveNav()
     })
 
+    const swiperEl = document.querySelector('swiper-container');
+    const progressBar = document.querySelector(".progress-bar .progress")
+
+    swiperEl.addEventListener('swiperprogress', (event) => {
+        const [swiper, progress] = event.detail;
+        progressBar.style.width = `${progress * 100}%`
+    });
+
     const thumbnail = document.querySelector(".thumbnail")
     thumbnail.addEventListener("click", () => {
         const target = document.querySelector(thumbnail.getAttribute("target"))
