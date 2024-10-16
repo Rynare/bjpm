@@ -1,5 +1,5 @@
 :root {
-    --main-color: #438D3D;
+    --main-color: #438d3d;
 }
 
 html,
@@ -83,6 +83,20 @@ swiper-slide img {
     width: 20%;
 }
 
+@media (max-width: 768px) {
+    #service {
+        background-color: #ececec;
+    }
+
+    .service-card {
+        width: 70%;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
+
 .service-card div:nth-child(2) {
     position: absolute;
     top: 0;
@@ -92,7 +106,9 @@ swiper-slide img {
     opacity: 0;
     transition: 250ms ease-in all;
     transition-delay: 100ms;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(67, 141, 61, 0.6) 60%);
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(67, 141, 61, 0.6) 60%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,13 +121,12 @@ swiper-slide img {
 }
 
 #project h1 {
-    background:
-        linear-gradient(90deg,
-            #438D3D 0%,
+    background: linear-gradient(90deg,
+            #438d3d 0%,
             rgba(161, 198, 158, 0.7) 50%,
             rgba(208, 227, 207, 0.5) 75%,
             rgba(255, 255, 255, 0) 100%),
-        url('../img/project/Header.jpeg');
+        url("../img/project/Header.jpeg");
     background-position-y: 60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +137,17 @@ swiper-slide img {
     aspect-ratio: 1/1;
     width: 30%;
     aspect-ratio: 1/1.15;
-    background-color: #438D3D;
+    background-color: #438d3d;
+}
+
+@media(max-width:768px) {
+    .project-card {
+        width: 100%;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
 }
 
 .article-card {
@@ -130,6 +155,20 @@ swiper-slide img {
     width: 20%;
     position: relative;
     --article-card-padding: 12px;
+}
+
+@media(max-width:768px) {
+    .article-card {
+        width: 100%;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .article-card>div {
+        height: 50%;
+    }
 }
 
 .article-card>div {
@@ -185,7 +224,7 @@ swiper-slide img {
     display: block;
     width: 80px;
     height: 80px;
-    background: #583759;
+    background: rgba(161, 198, 158, 0.7);
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -206,7 +245,7 @@ swiper-slide img {
 }
 
 .video-play-button:hover:after {
-    opacity: .80;
+    opacity: 0.8;
 }
 
 /* .video-play-button img {
