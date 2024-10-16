@@ -26,7 +26,7 @@
                     <img src="./assets/img/logo/logo-bjpm.png" alt="Logo BJPM" class="w-[70px] aspect-square">
                 </div>
                 <ul
-                    class="md:flex items-center grow justify-center gap-6 text-grey1 flex-wrap max-h-[40px] h-[40px] overflow-hidden max-w-[70%] hidden">
+                    class="hidden sm:flex items-center grow justify-center gap-6 text-grey1 flex-wrap max-h-[40px] h-[40px] overflow-hidden max-w-[70%]">
                     <li>
                         <a href="#home">Home</a>
                     </li>
@@ -101,7 +101,7 @@
         </header>
         <section id="home" class="relative h-screen">
             <swiper-container speed="500" pagination="true" pagination-type="progressbar" autoplay-delay="4000"
-                class="z-0 h-full">
+                class="z-0 w-full h-full">
                 <swiper-slide>
                     <img src="./assets/img/hero/1.jpg" alt="">
                 </swiper-slide>
@@ -124,7 +124,8 @@
                         <h1 class="font-bold text-[30px]">BJPM Scaffolding</h1>
                         <p class="text-[14px] my-3 mb-6">
                             <i>
-                                “Supplier, Industries, Scaffolding, Beton Lift, Concrete Bucket, Belt Conveyor, Steel
+                                “Supplier, Industries, Scaffolding, Beton Lift, Concrete Bucket, Belt Conveyor,
+                                Steel
                                 Construction, Asphal Sprayer,
                                 Stone Crusher “
                             </i>
@@ -153,7 +154,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="flex flex-col md:flex-row items-center p-4 px-10 my-10">
+        <section id="about" class="flex flex-col items-center p-4 px-10 my-10 md:flex-row justify-center">
             <div class="max-w-[700px] text-[13px] pe-4 md:order-1 order-2" data-aos="fade-right">
                 <h1 class="text-main text-[32px] font-bold mb-4">Kepuasan pelanggan adalah
                     tujuan kami</h1>
@@ -179,9 +180,9 @@
             <img src="./assets/img/About.png" alt="" class="max-w-[400px] w-[100%] p-4 md:order-2 order-1"
                 data-aos="slide-up">
         </section>
-        <section id="service" class="flex flex-col bg-gray2 mx-auto">
-            <div class="md:flex block justify-center gap-4 mb-4">
-                <div class="service-card mt-5 md:mt-0" data-aos="zoom-in">
+        <section id="service" class="flex flex-col mx-auto bg-gray2">
+            <div class="justify-center block gap-4 mb-4 md:flex">
+                <div class="mt-5 service-card md:mt-0" data-aos="zoom-in">
                     <div class="h-full">
                         <img src="./assets/img/service/Sccafolding.jpg" alt="" class="object-cover w-full h-full">
                     </div>
@@ -239,7 +240,7 @@
         </section> -->
         <section id="project" class="flex flex-col p-10">
             <h1 class="text-[32px] text-center text-white p-4 mb-4">Proyek Kami</h1>
-            <div class="md:flex block justify-between mb-4 project-card-container">
+            <div class="justify-between block mb-4 md:flex project-card-container">
                 <div class="project-card" data-aos="zoom-in">
                     <img src="./assets/img/project/1.jpg" alt="" class="object-cover w-full h-full">
                 </div>
@@ -253,35 +254,35 @@
             <button class="bg-main mx-auto text-white p-3 py-1 text-[13px]">Selengkapnya</button>
         </section>
         <section id="article" class="p-10 px-5 text-white bg-main">
-            <h1 class="text-[32px] mb-4">Artikel</h1>
-            <div class="block md:flex justify-between">
+            <h1 class="text-[32px] mb-6 font-bold">Artikel</h1>
+            <div class="flex flex-wrap justify-between gap-3">
                 <div class="article-card" data-aos="zoom-in">
                     <img src="./assets/img/Blank.jpg" alt="">
-                    <div>
-                        <p>Penyedia Layanan Terbaik</p>
-                        <button>Baca Lebih</button>
-                    </div>
+                    <p class="flex flex-wrap bg-white">
+                        <span>Penyedia Layanan Terbaik</span>
+                        <button class="ms-auto">Baca Lebih</button>
+                    </p>
                 </div>
                 <div class="article-card" data-aos="zoom-in">
                     <img src="./assets/img/Blank.jpg" alt="">
-                    <div>
-                        <p>Penyedia Layanan Terbaik</p>
-                        <button>Baca Lebih</button>
-                    </div>
+                    <p class="flex flex-wrap bg-white">
+                        <span>Penyedia Layanan Terbaik</span>
+                        <button class="ms-auto">Baca Lebih</button>
+                    </p>
                 </div>
                 <div class="article-card" data-aos="zoom-in">
                     <img src="./assets/img/Blank.jpg" alt="">
-                    <div>
-                        <p>Penyedia Layanan Terbaik</p>
-                        <button>Baca Lebih</button>
-                    </div>
+                    <p class="flex flex-wrap bg-white">
+                        <span>Penyedia Layanan Terbaik</span>
+                        <button class="ms-auto">Baca Lebih</button>
+                    </p>
                 </div>
                 <div class="article-card" data-aos="zoom-in">
                     <img src="./assets/img/Blank.jpg" alt="">
-                    <div>
-                        <p>Penyedia Layanan Terbaik</p>
-                        <button>Baca Lebih</button>
-                    </div>
+                    <p class="flex flex-wrap bg-white">
+                        <span>Penyedia Layanan Terbaik</span>
+                        <button class="ms-auto">Baca Lebih</button>
+                    </p>
                 </div>
             </div>
         </section>
@@ -334,11 +335,11 @@
             <div class="md:w-[21%] w-full md:mb-0 mb-5 md:order-5 order-1">
                 <img src="./assets/img/logo/logo-white.png" alt="" class=" aspect-square w-[100px]">
             </div>
-            <div class="md:w-[42%]  w-full md:order-6 order-7">
-                <h3 class="text-white hover:text-black">Client Kami</h3>
-                <div class="flex md:mt-3 mt-4 gap-4">
-                    <img src="./assets/img/logo/c1.png" alt="" class="h-[70px]">
-                    <img src="./assets/img/logo/c2.png" alt="" class="h-[70px]">
+            <div class="w-[47%] md:order-6 order-7">
+                <h3 class="text-white hover:text-black mb-4">Client Kami</h3>
+                <div class="flex flex-wrap">
+                    <img src="./assets/img/logo/c1.png" alt="" class="min-h-[32px] flex-shrink-1 h-full max-h-[70px]">
+                    <img src="./assets/img/logo/c2.png" alt="" class="min-h-[32px] flex-shrink-1 h-full max-h-[70px]">
                 </div>
             </div>
             <div class="md:w-[21%] w-full md:mb-0 mb-5 md:order-7 order-6 ">

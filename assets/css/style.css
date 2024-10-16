@@ -53,6 +53,7 @@ nav li>a.active::after {
     max-height: 100vh;
     height: 100vh;
     overflow-y: auto;
+    max-width: 100vw;
 }
 
 .nav-offcanvas.active {
@@ -179,52 +180,48 @@ swiper-slide img {
 
 .article-card {
     aspect-ratio: 1/1;
+    min-width: 200px;
     width: 20%;
+    flex-grow: 1;
     position: relative;
     --article-card-padding: 12px;
 }
 
-@media(max-width:768px) {
-    .article-card {
-        width: 100%;
-        gap: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-
-    .article-card>div {
-        height: 50%;
-    }
-}
-
-.article-card>div {
-    position: absolute;
-    bottom: 0;
-    max-height: 35.89%;
+.article-card>p {
+    max-height: 37.89%;
+    height: 37.89%;
     background-color: #fff;
     color: var(--main-color);
-    left: 0;
-    right: 0;
     padding: var(--article-card-padding);
     padding-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
-.article-card>div p {
-    width: 70%;
+.article-card>p>span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 6px;
 }
 
-.article-card>div>button {
-    position: absolute;
-    right: var(--article-card-padding);
-    bottom: var(--article-card-padding);
-    width: fit-content;
-    height: fit-content;
+.article-card>p>button {
     color: white;
     background-color: var(--main-color);
     font-size: 13px;
     padding: 0 1rem;
+    max-height: 40px;
 }
+
+@media(max-width:420px) {
+    .article-card>p>button {
+        margin-top: 56px;
+        max-height: 40px;
+    }
+}
+
 
 .video-play-button {
     position: absolute;
