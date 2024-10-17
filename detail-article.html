@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/project.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -188,68 +188,56 @@
                 </div>
             </div>
         </header>
-        <section id="product" class="flex flex-col px-10 py-2">
-            <h1 class="md:text-[32px] text-[20px] text-center text-white md:px-32 px-20 md:pt-32 md:pb-32 py-8 my-auto">
-                Produk Kami
-                <br>
-            </h1>
-            <div class="md:flex block justify md:my-8 my-0 mb-8 ">
-                <div class="w:1/3 md:mr-6 mr-0">
-                    <nav class="mb-4  block text-center bg-white justify-center md:w-[100px] w-auto">
-                        <div class="text-white font-bold p-4 mx-auto bg-main ">Kategori</div>
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="horrybeam">Horrybeam</button>
-                        <button class="filter-btn" data-filter="pipa">Pipa</button>
-                        <button class="filter-btn" data-filter="sccafolding">Sccafolding</button>
-                    </nav>
+        <section id="detail-article" class="py-6">
+            <div class="container mx-auto px-10">
+                <h1 class="text-4xl font-bold text-main mb-4">
+                    Judul Artikel Detail
+                </h1>
+
+                <div class="flex items-center justify-between text-sm text-gray-500 mb-6">
+                    <span class="italic">Published on: <strong>12 Oktober 2024</strong></span>
+                    <span class="italic">By: <strong>Admin</strong></span>
                 </div>
-                <div class="w:2/3">
-                    <div class="justify-start gap-12 block md:flex md:flex-wrap product-card-container">
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
 
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
+                <div class="mb-8">
+                    <img src="assets/img/article/2.jpg" alt="Gambar Utama Artikel"
+                        class="w-full h-auto object-cover max-h-[400px]">
+                </div>
 
-                        </div>
+                <article class="prose max-w-none text-justify font-normal text-sm">
+                    <p class="p-detail">
+                        PT Bina Jaya Perkasa Mandiri telah berkecimpung dalam dunia konstruksi dan pemasok scaffolding
+                        selama
+                        lebih dari 30 tahun.
+                        Kami berdedikasi untuk memberikan layanan berkualitas tinggi kepada seluruh pelanggan kami.
+                        Artikel ini
+                        akan membahas
+                        lebih lanjut tentang perjalanan perusahaan kami, inovasi yang terus kami lakukan, serta
+                        kontribusi kami
+                        terhadap
+                        pembangunan infrastruktur di Indonesia.
+                    </p>
 
-                        <div class="product-card" data-category="sccafolding">
-                            <img src="./assets/img/product/sccafolding.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Sccafolding</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
-                        <div class="product-card" data-category="sccafolding">
-                            <img src="./assets/img/product/sccafolding.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Sccafolding</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
+                    <p class="p-detail">
+                        Dalam tiga dekade terakhir, PT Bina Jaya Perkasa Mandiri telah bekerja sama dengan berbagai
+                        perusahaan
+                        besar dan pemerintah
+                        dalam pembangunan proyek-proyek infrastruktur, termasuk gedung perkantoran, perumahan, dan
+                        sarana
+                        pendidikan.
+                    </p>
 
-                        </div>
-                        <div class="product-card" data-category="pipa">
-                            <img src="./assets/img/product/pipa.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Pipa</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
-                    </div>
+                </article>
 
+                <div class="mt-8">
+                    <a href="./article.html" class="bg-main text-white px-4 py-2 ">
+                        Kembali
+                    </a>
                 </div>
             </div>
         </section>
+
+
     </div>
     <footer id="contact" class="p-10  bg-main">
         <h1 class="text-main text-[20px] font-bold mb-4">Hubungi Kami</h1>
@@ -271,7 +259,7 @@
             </div>
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-3 order-4">
                 <h3 class="mb-2 text-white hover:text-black">Pintasan</h3>
-                <div class="flex flex-col">
+                <div class="flex flex-col ">
                     <a href="./index.html" class="text-white font-normal hover:text-black mb-1" href="">Home</a>
                     <a href="./about.html" class="text-white font-normal hover:text-black mb-1" href="">Tentang</a>
                     <a href="./service.html" class="text-white font-normal hover:text-black mb-1" href="">Layanan</a>
@@ -282,7 +270,7 @@
                 </div>
             </div>
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-4 order-5">
-                <h3 class="mb-2 text-white hover:text-black">Kantor Utama</h3>
+                <h3 class="mb-2 text-white hover:text-black ">Kantor Utama</h3>
                 <div class="flex flex-col">
                     <a class="text-white font-normal hover:text-black" href="">JI. Gunung Sari 5 H Surabaya 60242</a>
                     <a class="text-white font-normal hover:text-black" href="">Telp. (031) 5682517, 5682533</a>
@@ -311,9 +299,9 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- <script>
+    <script>
         AOS.init();
-    </script> -->
+    </script>
     <script>
         tailwind.config = {
             theme: {
@@ -329,7 +317,7 @@
         }
     </script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/project.js"></script>
 </body>
 
 </html>

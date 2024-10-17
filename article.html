@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/project.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -188,68 +188,108 @@
                 </div>
             </div>
         </header>
-        <section id="product" class="flex flex-col px-10 py-2">
-            <h1 class="md:text-[32px] text-[20px] text-center text-white md:px-32 px-20 md:pt-32 md:pb-32 py-8 my-auto">
-                Produk Kami
-                <br>
-            </h1>
-            <div class="md:flex block justify md:my-8 my-0 mb-8 ">
-                <div class="w:1/3 md:mr-6 mr-0">
-                    <nav class="mb-4  block text-center bg-white justify-center md:w-[100px] w-auto">
-                        <div class="text-white font-bold p-4 mx-auto bg-main ">Kategori</div>
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="horrybeam">Horrybeam</button>
-                        <button class="filter-btn" data-filter="pipa">Pipa</button>
-                        <button class="filter-btn" data-filter="sccafolding">Sccafolding</button>
-                    </nav>
+        <section id="article" class="py-6">
+            <div class="container px-10">
+                <div id="carouselExample" class="relative w-full mb-8" data-aos="fade-up">
+                    <div class="relative overflow-hidden h-64">
+                        <div class="flex transition-transform duration-300 ease-in-out" id="carouselItems">
+                            <div class="relative w-full flex-shrink-0">
+                                <img src="assets/img/article/1.jpg" class="w-full h-64 object-cover"
+                                    alt="Artikel Terbaru 1">
+                                <div class="absolute bottom-0 left-0 right-0 bg-main bg-opacity-50 text-white p-4">
+                                    <h2 class="text-lg font-bold">Judul Artikel 1</h2>
+                                </div>
+                            </div>
+
+                            <div class="relative w-full flex-shrink-0">
+                                <img src="assets/img/article/1.jpg" class="w-full h-64 object-cover"
+                                    alt="Artikel Terbaru 1">
+                                <div class="absolute bottom-0 left-0 right-0 bg-main bg-opacity-50 text-white p-4">
+                                    <h2 class="text-lg font-bold">Judul Artikel 2</h2>
+                                </div>
+                            </div>
+                            <div class="relative w-full flex-shrink-0">
+                                <img src="assets/img/article/1.jpg" class="w-full h-64 object-cover"
+                                    alt="Artikel Terbaru 1">
+                                <div class="absolute bottom-0 left-0 right-0 bg-main bg-opacity-50 text-white p-4">
+                                    <h2 class="text-lg font-bold">Judul Artikel 3</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="prevSlide()"
+                        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-main text-white p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button onclick="nextSlide()"
+                        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-main text-white p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
                 </div>
-                <div class="w:2/3">
-                    <div class="justify-start gap-12 block md:flex md:flex-wrap product-card-container">
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
 
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-
-                        </div>
-
-                        <div class="product-card" data-category="sccafolding">
-                            <img src="./assets/img/product/sccafolding.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Sccafolding</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
-                        <div class="product-card" data-category="sccafolding">
-                            <img src="./assets/img/product/sccafolding.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Sccafolding</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-
-                        </div>
-                        <div class="product-card" data-category="pipa">
-                            <img src="./assets/img/product/pipa.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Pipa</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="shadow-lg overflow-hidden" data-aos="fade-up">
+                        <img src="assets/img/article/2.jpg" class="w-full h-40 object-cover" alt="Article Image 1">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">15 Oktober 2024</p>
+                            <h3 class="text-lg font-bold mb-4">Judul Artikel 1</h3>
+                            <a href="./detail-article.html"
+                                class="mx-auto text-white bg-main border-2 border-white hover:text-main hover:bg-white hover:border-2 hover:border-main p-2 text-[10px]  md:mb-0 mb-5 mt-4">
+                                Selengkapnya
+                            </a>
                         </div>
                     </div>
 
+                    <div class="shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/img/article/2.jpg" class="w-full h-40 object-cover" alt="Article Image 2">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">10 Oktober 2024</p>
+                            <h3 class="text-lg font-bold mb-4">Judul Artikel 2</h3>
+                            <a href="./detail-article.html"
+                                class="mx-auto text-white bg-main border-2 border-white hover:text-main hover:bg-white hover:border-2 hover:border-main p-2 text-[10px]  md:mb-0 mb-5 mt-4">
+                                Selengkapnya
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/article/2.jpg" class="w-full h-40 object-cover" alt="Article Image 3">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">5 Oktober 2024</p>
+                            <h3 class="text-lg font-bold mb-4">Judul Artikel 3</h3>
+                            <a href="./detail-article.html"
+                                class="mx-auto text-white bg-main border-2 border-white hover:text-main hover:bg-white hover:border-2 hover:border-main p-2 text-[10px]  md:mb-0 mb-5 mt-4">
+                                Selengkapnya
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <script>
+            let currentSlide = 0;
+            const carouselItems = document.getElementById('carouselItems');
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % 3;
+                carouselItems.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + 3) % 3;
+                carouselItems.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+        </script>
+
+
     </div>
     <footer id="contact" class="p-10  bg-main">
         <h1 class="text-main text-[20px] font-bold mb-4">Hubungi Kami</h1>
@@ -271,7 +311,7 @@
             </div>
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-3 order-4">
                 <h3 class="mb-2 text-white hover:text-black">Pintasan</h3>
-                <div class="flex flex-col">
+                <div class="flex flex-col ">
                     <a href="./index.html" class="text-white font-normal hover:text-black mb-1" href="">Home</a>
                     <a href="./about.html" class="text-white font-normal hover:text-black mb-1" href="">Tentang</a>
                     <a href="./service.html" class="text-white font-normal hover:text-black mb-1" href="">Layanan</a>
@@ -282,7 +322,7 @@
                 </div>
             </div>
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-4 order-5">
-                <h3 class="mb-2 text-white hover:text-black">Kantor Utama</h3>
+                <h3 class="mb-2 text-white hover:text-black ">Kantor Utama</h3>
                 <div class="flex flex-col">
                     <a class="text-white font-normal hover:text-black" href="">JI. Gunung Sari 5 H Surabaya 60242</a>
                     <a class="text-white font-normal hover:text-black" href="">Telp. (031) 5682517, 5682533</a>
@@ -311,9 +351,9 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- <script>
+    <script>
         AOS.init();
-    </script> -->
+    </script>
     <script>
         tailwind.config = {
             theme: {
@@ -329,7 +369,7 @@
         }
     </script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/project.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/project.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -188,68 +188,81 @@
                 </div>
             </div>
         </header>
-        <section id="product" class="flex flex-col px-10 py-2">
-            <h1 class="md:text-[32px] text-[20px] text-center text-white md:px-32 px-20 md:pt-32 md:pb-32 py-8 my-auto">
-                Produk Kami
-                <br>
-            </h1>
-            <div class="md:flex block justify md:my-8 my-0 mb-8 ">
-                <div class="w:1/3 md:mr-6 mr-0">
-                    <nav class="mb-4  block text-center bg-white justify-center md:w-[100px] w-auto">
-                        <div class="text-white font-bold p-4 mx-auto bg-main ">Kategori</div>
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="horrybeam">Horrybeam</button>
-                        <button class="filter-btn" data-filter="pipa">Pipa</button>
-                        <button class="filter-btn" data-filter="sccafolding">Sccafolding</button>
-                    </nav>
-                </div>
-                <div class="w:2/3">
-                    <div class="justify-start gap-12 block md:flex md:flex-wrap product-card-container">
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
+        <section id="services">
+            <div class="px-10 mx-auto p-6">
+                <h1 class="text-4xl text-main font-bold my-4 border-b-4 pb-2 w-fit border-main" data-aos="fade-down">
+                    Layanan Kami
+                </h1>
+                <p class="text-sm font-normal mb-8 text-justify" data-aos="fade-down" data-aos-delay="100">
+                    PT Bina Jaya Perkasa Mandiri menawarkan berbagai layanan unggulan yang dirancang untuk memenuhi
+                    kebutuhan pembangunan dan konstruksi di Indonesia. Dengan pengalaman lebih dari 30 tahun, kami
+                    berkomitmen untuk memberikan layanan yang cepat, tepat, dan berkualitas.
+                </p>
 
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
-                        <div class="product-card" data-category="horrybeam">
-                            <img src="./assets/img/product/horrybeam.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Horrybeam</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-
-                        </div>
-
-                        <div class="product-card" data-category="sccafolding">
-                            <img src="./assets/img/product/sccafolding.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Sccafolding</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-                        </div>
-                        <div class="product-card" data-category="sccafolding">
-                            <img src="./assets/img/product/sccafolding.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Sccafolding</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
-
-                        </div>
-                        <div class="product-card" data-category="pipa">
-                            <img src="./assets/img/product/pipa.jpg" alt="" class="object-cover w-full h-full">
-                            <p class="product-text">Pipa</p>
-                            <a href="./detail-product.html" style="text-decoration:none;"
-                                class="product-btn text-sm">Selengkapnya</a>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="flex flex-col md:flex-row shadow-md overflow-hidden" data-aos="fade-down"
+                        data-aos-delay="200">
+                        <img src="/assets/img/service/4.jpg" alt="Penyewaan Scaffolding"
+                            class="w-full md:w-1/2 max-h-64 object-cover">
+                        <div class="bg-main shadow-md p-6">
+                            <h2 class="text-xl font-bold mb-4 text-white">Penyewaan </h2>
+                            <p class="text-sm leading-5 text-white text-justify">
+                                Kami menyediakan layanan penyewaan scaffolding untuk berbagai jenis proyek, mulai dari
+                                konstruksi gedung tinggi hingga renovasi rumah. Layanan ini memudahkan klien untuk
+                                mendapatkan peralatan yang diperlukan tanpa harus membeli.
+                            </p>
                         </div>
                     </div>
 
+                    <div class="flex flex-col md:flex-row shadow-md overflow-hidden" data-aos="fade-down"
+                        data-aos-delay="300">
+                        <div class="bg-main shadow-md p-6 md:order-1 order-2">
+                            <h2 class="text-xl font-bold mb-4 text-white">Konstruksi Baja</h2>
+                            <p class="text-sm leading-5 text-white text-justify">
+                                Sebagai penyedia konstruksi baja, kami menawarkan solusi struktural yang kuat dan tahan
+                                lama
+                                untuk proyek-proyek besar. Tim kami berpengalaman dalam merancang dan membangun struktur
+                                baja yang sesuai dengan kebutuhan spesifik klien.
+                            </p>
+                        </div>
+                        <img src="/assets/img/service/2.jpeg" alt="Konstruksi Baja"
+                            class="w-full md:w-1/2 max-h-64 object-cover md:order-2 order-1">
+                    </div>
+
+                    <div class="flex flex-col md:flex-row shadow-md overflow-hidden" data-aos="fade-down"
+                        data-aos-delay="400">
+                        <img src="/assets/img/service/3.jpg" alt="Penyedia Material"
+                            class="w-full md:w-1/2 max-h-64 object-cover">
+                        <div class="bg-main shadow-md p-6">
+                            <h2 class="text-xl font-bold mb-4 text-white">Penyedia Material</h2>
+                            <p class="text-sm leading-5 text-white text-justify">
+                                Kami merupakan supplier material konstruksi yang menyediakan berbagai jenis bahan
+                                berkualitas tinggi untuk proyek pembangunan. Dari bahan bangunan hingga perlengkapan
+                                konstruksi, kami memastikan ketersediaan material yang tepat waktu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row shadow-md overflow-hidden" data-aos="fade-down"
+                        data-aos-delay="500">
+                        <div class="bg-main shadow-md p-6 md:order-1 order-2">
+                            <h2 class="text-xl font-bold mb-4 text-white">Scaffolding</h2>
+                            <p class="text-sm leading-5 text-white text-justify">
+                                Kami menyediakan scaffolding yang aman dan berkualitas untuk semua jenis proyek. Produk
+                                kami
+                                memenuhi standar keselamatan yang ketat dan dirancang untuk mendukung efisiensi kerja di
+                                lokasi konstruksi.
+                            </p>
+                        </div>
+                        <img src="/assets/img/service/1.jpg" alt="Scaffolding"
+                            class="w-full md:w-1/2 max-h-64 object-cover md:order-2 order-1">
+                    </div>
                 </div>
             </div>
         </section>
+
+
+
     </div>
     <footer id="contact" class="p-10  bg-main">
         <h1 class="text-main text-[20px] font-bold mb-4">Hubungi Kami</h1>
@@ -271,7 +284,7 @@
             </div>
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-3 order-4">
                 <h3 class="mb-2 text-white hover:text-black">Pintasan</h3>
-                <div class="flex flex-col">
+                <div class="flex flex-col ">
                     <a href="./index.html" class="text-white font-normal hover:text-black mb-1" href="">Home</a>
                     <a href="./about.html" class="text-white font-normal hover:text-black mb-1" href="">Tentang</a>
                     <a href="./service.html" class="text-white font-normal hover:text-black mb-1" href="">Layanan</a>
@@ -282,7 +295,7 @@
                 </div>
             </div>
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-4 order-5">
-                <h3 class="mb-2 text-white hover:text-black">Kantor Utama</h3>
+                <h3 class="mb-2 text-white hover:text-black ">Kantor Utama</h3>
                 <div class="flex flex-col">
                     <a class="text-white font-normal hover:text-black" href="">JI. Gunung Sari 5 H Surabaya 60242</a>
                     <a class="text-white font-normal hover:text-black" href="">Telp. (031) 5682517, 5682533</a>
@@ -311,9 +324,9 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- <script>
+    <script>
         AOS.init();
-    </script> -->
+    </script>
     <script>
         tailwind.config = {
             theme: {
@@ -329,7 +342,7 @@
         }
     </script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/project.js"></script>
 </body>
 
 </html>

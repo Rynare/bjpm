@@ -20,6 +20,80 @@
 
 <body class="bg-white">
     <div id="root">
+        <div id="whatsapp-button">
+            <button id="wa-button" class="bg-main text-white py-5 px-7 rounded-full shadow-lg pulse-hover">
+                <i class="bi bi-whatsapp" style="font-size: 25px;"></i>
+            </button>
+
+            <div id="wa-menu" style="display: none;">
+                <button class="menu-button font-semibold text-xs"
+                    onclick="location.href='https://wa.me/6289509512660?text=Hello%20CS'">Hubungi
+                    CS</button>
+                <button class="menu-button font-semibold text-xs"
+                    onclick="location.href='https://wa.me/6289509512660?text=Hello%20Owner'">Hubungi
+                    Owner</button>
+            </div>
+        </div>
+
+        <script>
+            const waButton = document.getElementById('wa-button');
+            const waMenu = document.getElementById('wa-menu');
+
+            waButton.onclick = function () {
+                waMenu.style.display = (waMenu.style.display === 'none' || waMenu.style.display === '') ?
+                    'flex' :
+                    'none';
+            };
+        </script>
+
+        <style>
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            .pulse-hover:hover {
+                animation: pulse 0.6s infinite;
+            }
+
+            #whatsapp-button {
+                position: fixed;
+                right: 15px;
+                bottom: 25px;
+                z-index: 50;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #wa-menu {
+                display: none;
+
+                flex-direction: column;
+                margin-top: 5px;
+            }
+
+            .menu-button {
+                background-color: white;
+                border: 1px solid #438D3D;
+                color: #438D3D;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                margin: 5px 0;
+
+            }
+        </style>
         <header class="sticky top-0 z-50 px-8 bg-body">
             <nav class="flex items-center justify-between font-poppin">
                 <div class="logo flex">
@@ -83,7 +157,7 @@
                             <a href="#service">Layanan</a>
                         </li>
                         <li>
-                            <a href="#product">Produk</a>
+                            <a href="./product.html">Produk</a>
                         </li>
                         <li>
                             <a href="#project">Proyek</a>
@@ -185,14 +259,14 @@
                     layanan dan produk berkualitas, PT. Bina Jaya Perkasa Mandiri siap mendukung pembangunan Indonesia
                     yang berkelanjutan.
                 </p>
-                <button
-                    class="p-3 mt-3 text-white bg-main border-2 border-white hover:text-main hover:bg-white hover:border-2 hover:border-main">Selengkapnya</button>
+                <a href="./about.html" style="text-decoration: none;"
+                    class="p-3 mt-3 text-white bg-main border-2 border-white hover:text-main hover:bg-white hover:border-2 hover:border-main">Selengkapnya</a>
             </div>
             <img src="./assets/img/About.png" alt="" class="max-w-[400px] w-[100%] py-4 ps-4 md:order-2 order-1 img-abt"
                 data-aos="slide-up">
         </section>
         <section id="service" class="flex flex-col mx-auto bg-gray2 px-10">
-            <h1 class="text-[32px] text-center text-main font-bold pt-4 px-4" data-aos="fade-up">Layanan Kami</h1>
+            <h1 class="text-[32px] text-center text-main font-bold pt-4 px-4 pb-4" data-aos="fade-up">Layanan</h1>
             <div class="justify-between block gap-4 mb-4 md:flex">
                 <div class="mt-5 service-card md:mt-0 " data-aos="zoom-in">
                     <div class="h-full">
@@ -222,6 +296,7 @@
                     </div>
                 </div>
                 <div class="service-card" data-aos="zoom-in">
+
                     <div class="h-full">
                         <img src="./assets/img/service/Supplier.jpg" alt="" class="object-cover w-full h-full">
                     </div>
@@ -231,13 +306,13 @@
                     </div>
                 </div>
             </div>
-            <button
+            <a href="./service.html" style="text-decoration: none;"
                 class="mx-auto text-white bg-main border-2 border-white hover:text-main hover:bg-white hover:border-2 hover:border-main p-3 text-[13px]  md:mb-0 mb-5 mt-4">
                 Selanjutnya
-            </button>
+            </a>
         </section>
         <section id="project" class="flex flex-col p-10">
-            <h1 class="text-[32px] text-center text-white font-bold p-4 mb-6">Proyek Kami</h1>
+            <h1 class="text-[32px] text-center text-white font-bold p-4 mb-6">Proyek </h1>
             <div class="justify-between block mb-4 md:flex project-card-container">
                 <div class="project-card" data-aos="zoom-in">
                     <img src="./assets/img/project/1.jpg" alt="" class="object-cover w-full h-full">
@@ -249,8 +324,8 @@
                     <img src="./assets/img/project/3.jpg" alt="" class="object-cover w-full h-full">
                 </div>
             </div>
-            <button
-                class="bg-main mx-auto text-white bg-main border-2 border-white hover:text-main hover:bg-white hover:border-2 hover:border-main p-3 mt-4 text-[13px]">Selengkapnya</button>
+            <a href="./project.html" style="text-decoration: none;"
+                class="bg-main mx-auto text-white bg-main border-2 border-white hover:text-main hover:bg-white hover:border-2 hover:border-main p-3 mt-4 text-[13px]">Selengkapnya</a>
         </section>
         <section id="article" class="p-10 text-white bg-main">
             <h1 class="text-[32px] mb-4 font-bold">Artikel</h1>
@@ -341,7 +416,7 @@
                 <a class="text-white font-normal hover:text-black" href="tel:6289509512660">+62-895-0951-2660</a>
             </div>
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-3 order-4">
-                <h3 class="mb-2 text-white hover:text-black">Social Media</h3>
+                <h3 class="mb-2 text-white hover:text-black">Sosial Media</h3>
                 <div class="flex flex-col">
                     <a class="text-white font-normal hover:text-black" href="">Facebook</a>
                     <a class="text-white font-normal hover:text-black" href="">Instagram</a>
@@ -350,13 +425,13 @@
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-3 order-4">
                 <h3 class="mb-2 text-white hover:text-black">Pintasan</h3>
                 <div class="flex flex-col">
-                    <a href="#home" class="text-white font-normal hover:text-black" href="">Home</a>
-                    <a href="#about" class="text-white font-normal hover:text-black" href="">Tentang</a>
-                    <a href="#service" class="text-white font-normal hover:text-black" href="">Layanan</a>
-                    <a href="./product.html" class="text-white font-normal hover:text-black" href="">Produk</a>
-                    <a href="#project" class="text-white font-normal hover:text-black" href="">Proyek</a>
-                    <a href="#articel" class="text-white font-normal hover:text-black" href="">Artikel</a>
-
+                    <a href="./index.html" class="text-white font-normal hover:text-black mb-1" href="">Home</a>
+                    <a href="./about.html" class="text-white font-normal hover:text-black mb-1" href="">Tentang</a>
+                    <a href="./service.html" class="text-white font-normal hover:text-black mb-1" href="">Layanan</a>
+                    <a href="./project.html" class="text-white font-normal hover:text-black mb-1" href="">Produk</a>
+                    <a href="./project.html" class="text-white font-normal hover:text-black mb-1" href="">Proyek</a>
+                    <a href="./article.html" class="text-white font-normal hover:text-black mb-1" href="">Artikel</a>
+                    <a href="./contact.html" class="text-white font-normal hover:text-black mb-1" href="">Kontak</a>
                 </div>
             </div>
             <div class="md:w-[18%] w-full md:mb-0 mb-5 md:order-4 order-5">

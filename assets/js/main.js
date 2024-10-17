@@ -20,17 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setActiveNav();
   });
-
-  const thumbnail = document.querySelector(".thumbnail");
-  thumbnail.addEventListener("click", () => {
-    const target = document.querySelector(thumbnail.getAttribute("target"));
-    thumbnail.classList.add("hidden");
-    target.classList.remove("opacity-0");
-    target.contentWindow.postMessage(
-      '{"event":"command","func":"playVideo","args":""}',
-      "*"
-    );
-  });
 });
 
 function setActiveNav() {
